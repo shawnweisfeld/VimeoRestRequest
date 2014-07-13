@@ -1,0 +1,17 @@
+﻿@model WebApplication1.Models.Video
+@{
+    ViewBag.Title = "VideoDetails";
+}
+
+<h2>Video Details - @Model.name</h2>
+
+<h3>Files</h3>
+<ul>
+    @foreach(var file in Model.files)
+    { 
+    <li>@file.link</li>
+    }
+</ul>
+
+@ViewBag.Json
+
